@@ -1,0 +1,26 @@
+{% extends 'flatpages/default.html' %}
+
+
+{% block content %}
+<div class="col-lg-12">
+                   {{ flatpage.content }}
+</div>
+<hr>
+<p>Итак, надемся, вы внимательно ознакомились с фактами о слонах.</p>
+<p>Вы запомнили все факты?</p>
+<p>Точно?</p>
+<p>Тогда вы готовы к "революционному высокотехнологичному тестированию"&copy;!</p>
+<p>Готовы?</p>
+<p>
+  <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Жмакните сюда, чтобы проверить себя!
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+      {{ flatpage.content }}
+  </div>
+</div>
+
+
+{% endblock content %}
